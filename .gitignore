@@ -1,0 +1,6 @@
+srcs/var/data/*
+!srcs/var/data/.gitkeep
+!srcs/var/html/index.html
+!srcs/var/html/.gitkeep
+srcs/var/html/*
+!srcs/var/html/.gitkeep

@@ -6,7 +6,7 @@ RUN apt-get -y install php7.3 php-mysqli php-fpm curl mariadb-client
 EXPOSE 9000
 
 COPY ./conf/www.conf /etc/php/7.3/fpm/pool.d
-ADD files/run.sh /var/www/
+ADD tools/run.sh /var/www/
 RUN chmod +x /var/www/run.sh
 RUN curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar && \
     chmod +x wp-cli.phar && \
